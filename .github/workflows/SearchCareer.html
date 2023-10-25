@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SearchCareer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+          <div class="signin-signup">
+            <form action="report.html" method="post" class="sign-in-form">
+              <h2 class="title">Search Career</h2>
+              <div class="input-field">
+                <input type="Text" placeholder="Search Career" name ="Search Career" id="Search Career" />
+              </div>
+              <div class="input-field">
+                <input type="number" min="1" max="100" placeholder="Aps Score" id ="Aps Score" />
+              </div>
+              <input type="submit" value="Search" class="btn solid" id ="Search Career" />
+          </div>
+        </div>
+    </div>
+
+    <script>
+        var SubmitButton = document.getElementById('Search Career');
+        var Search Career = document.getElementById('Search Career').innerText()
+        var Aps Score = document.getElementById('Aps Score').innerText()
+
+        const date = new Date();
+        var nameVariable = "Career"+date.getTime;
+        console.log(nameVariable)
+
+        SubmitButton.onclick = () => 
+        {
+        localStorage.setItem(nameVariable, {'Career': Search Career, 'Aps Score':Aps Score})
+        }
+        
+    </script>
+</body>
+ <footer>
+        <p><i>created by group JA PRT2 46, &copy;copyrightable 2023</i></p>
+    </footer>
+<script src="js/app.js"></script>
+</html>
